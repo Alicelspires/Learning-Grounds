@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Quicksand:wght@300..700&display=swap');
+
+
+*{
+    margin:0;
+}
+:root {
+    --color-nav-footer: #152C34;
+    --color-background: #0B1E27;
+    --font-black: #111111;
+    --font-white:#f5f4ed;
+    --cards: #C6AB74;
+    --cards-hover:#e2c88f;
+    --buttons: #B1C29E;
+}
+body{
+    background-color: var(--color-background);
+    margin:0;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+.header {
+    background:#222831;
+    color:white;
+    padding:30px;
+    background-color: var(--color-nav-footer);
+    border-bottom-right-radius: 90%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+    nav{
+        display:inline-flex;
+        align-items: center;
+        margin-left:30px;
+    }
+
+    .logotipo{
+        color:var(--font-white);
+        font-family: "Quicksand", sans-serif;
+        margin:10px;
+        font-size: 1.2em;
+    }
+
+    .logo-icone{
+        width:40px;
+    }
+}
+
+.content{
+    margin:0;
+    padding:30px;
+    flex:1;
+}
+
+/*Status and medias*/
+.sidebar {
+    float:left;
+    width:30%;
+    color:var(--font-white);
+    font-family: "Quicksand", sans-serif;
+    padding:30px;
+    box-sizing:border-box;
+    border-right: dotted 1px #f5f4ed;
+    .status{
+        padding-top:5px;
+    }
+    .photo{
+        width:50px;
+        clip-path: circle(49%);
+        margin:5px;
+    }
+    .medias{
+        background-color: var(--cards);
+        border-radius: 20px;
+        padding: 10px;
+        margin-top:20px;
+        width:283px;
+    }
+    .media-image{
+        width: 30px;
+        height: 30px;
+        margin:5px;
+    }
+    .row-media{
+        display:flex;
+        align-items: center;
+        p, a{
+            color:var(--font-black);
+            margin:10px;
+            font-weight: 500;
+        }
+    }
+}
+/*Cards*/
+.main {
+    float:right;
+    box-sizing: border-box;
+    width:70%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top:50px;
+}
+.project{
+    display: flex;
+    background-color: var(--cards);
+    height:185px;
+    width:260px;
+    margin:10px;
+    border-style: solid;
+    border-color:#C6AB74;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    img{
+        display:flex ;
+        width:auto;
+        height:179px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+    .text-card{
+        margin:10px;
+        font-family: "Quicksand", sans-serif;
+        color:var(--font-black);
+        padding:0px;
+    }
+    p{
+        font-weight:550;
+        margin-top:9px;
+    }
+}
+
+.project:hover{
+    background-color: var(--cards-hover);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
+}
+
+.languages{
+    display:flex;
+    justify-content: flex-end;
+    margin:10px;
+    box-sizing: border-box;
+    img{
+        width:30px;
+        height:30px;
+    }
+}
+@media(max-width:1227px){
+    .main{
+        width:100%;
+        float:none;
+    }
+    .sidebar{
+        width:100%;
+        float:none;
+        border-bottom: dotted 1px #f5f4ed;
+        border-right: none;
+        display: flex;
+        gap:40px;
+        align-items: center;
+    }
+}
+@media(max-width:754px){
+    .sidebar{
+        width:100%;
+        float:none;
+        border-bottom: dotted 1px #f5f4ed;
+        border-right: none;
+        display: block;
+        gap:0px;
+    }
+}
+
+footer{
+    background:#FFD369;
+    height:130px;
+    bottom: 0;
+    width: 100%;
+    position:relative;
+    background-color: var(--color-nav-footer);
+    border-top-left-radius: 80%;
+    box-sizing: border-box;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    align-content: flex-end;
+    justify-items: center;
+    hr{
+        width:80%;
+    }
+    p{
+        margin:10px;
+        color:white;
+    }
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin:0;
+}
+:root {
+    --color-nav-footer: #377478;
+    --color-background: #10375C;
+    --font-black: #111111;
+    --font-white:#f5f4ed;
+    --gradient: rgba(235, 131, 23, 1 );
+}
+body{
+    background-color: var(--color-background);
+    margin:0;
+    width:100%;
+    font-family: "Quicksand", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/*Navbar ----------------------------------------*/
+.header {
+    width:auto;
+    color:white;
+    padding:15px;
+    background-color: var(--color-nav-footer);
+    nav{
+        align-items: center;
+        display:flex;
+        justify-content: space-between;
+        align-content: center;
+
+    }
+    .home{
+        display:flex;
+    }
+
+    .logotipo{
+        color:var(--font-white);
+        font-family: "Quicksand", sans-serif;
+        margin:15px;
+        font-size: 1.2em;
+    }
+
+    .logo-icone{
+        width:40px;
+        height:40px;
+        margin:0 10px;
+    }
+}
+
+/* cards---------------------------------*/
+main{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    margin:30px;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: url(/projects/little_games/assets/img/carlos-felipe-ramirez-mesa-g3CsD5K-KZE-unsplash.jpg) no-repeat center center/cover;
+    width: 622px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:30px;
+    color: var(--font-white);
+}
+.infos{
+    float: left;
+    width:60%;
+}
+.arrow{
+    float:right;
+    width:90px;
+    height:100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+    
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), var(--gradient));
+    border-radius: 10px;
+}
+
+.container > div {
+    position: relative; 
+    z-index: 2;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+    

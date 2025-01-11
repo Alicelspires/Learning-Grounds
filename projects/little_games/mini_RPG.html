@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projects/little_games/assets/styles/mini_rpg.css">
+    <link rel="shortcut icon" href="/projects/little_games/assets/img/logo/Triforce.png" type="image/x-icon">
+    <title>RPG - Dragon+ Repeller</title>
+</head>
+<body>
+    <header>
+        <img src="/common/logo/icons8-logoProj-white.png" alt="logo project free Code Camp">
+    </header>
+    <section>
+        <aside>
+            <img src="/projects/little_games/assets/img/logo/littleRPG.png" alt="">
+            <img src="" alt="">
+            <p>Choose your character: </p>
+            <div >
+                <img src="/projects/little_games/assets/img/Shift(left).png" alt="left arrow">
+                <img class="warrior" width="180px" src="/projects/little_games/assets/img/vecteezy_ai-generated-warior-character-hold-a-blade-in-cartoon-style_36271547.png" alt="">
+                <img src="/projects/little_games/assets/img/Shift(right).png" alt="right arrow">
+            </div>
+            <div class="namesCharact">
+                <select name="" id="characters">
+                    <option value="" class="charact">Guerreiro</option>
+                    <option value="" class="charact">Elfo</option>
+                    <option value="" class="charact">Bardo</option>
+                    <option value="" class="charact">Mago</option>
+                    <option value="" class="charact">Lefou</option>
+                </select>
+                <input type="button" value="Enter">
+            </div>
+        </aside>
+        <main id="game">
+            <div id="stats">
+                <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+                <span class="stat">Health: <strong><span id="xpText">100</span></strong></span>
+                <span class="stat">Gold: <strong><span id="xpText">50</span></strong></span>
+            </div>
+            <div id="controls">
+                <button class="button1">Go to store</button>
+                <button class="button2">Go to cave</button>
+                <button class="button3"> Fight dragon</button>
+            </div>
+            <div id="monsterStats">
+                <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+                <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+            </div>
+            <div id="text">
+                Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
+            </div>
+        </main>
+    </section>
+
+    <script src="teste.js"></script>
+</body>
+</html>

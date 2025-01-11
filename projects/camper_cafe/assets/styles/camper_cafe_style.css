@@ -1,0 +1,166 @@
+/*Status and medias*/
+.hero-section{
+    background-image: url(/projects/camper_cafe/assets/img-camperCafe/pablo-merchan-montes-_Tw4vCs9C-8-unsplash.jpg);
+    background-size:auto;
+    background-position:left;
+    background-repeat: no-repeat;
+    height:620px;
+}
+.shadow {
+    background:var(--color-nav-footer);
+    border-bottom-left-radius:400px ;
+    border-bottom-right-radius:400px;
+    width:40%;
+    margin-left:10%;
+    height:600px;
+    display:flex;
+    align-items:center ;
+    justify-content: center;
+    box-shadow: 0px 20px 20px 2px rgba(0, 0, 
+    0, 0.486) ;
+    border-bottom: dashed #fff ;
+    border-left:dashed #fff  ;
+    border-right:dashed #fff  ;
+    img{
+        margin-bottom:100px;
+    }
+}
+
+
+/*Search bar ------------------------------*/
+
+.search{
+    background:var(--color-nav-footer);
+    height:120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+span{
+    width:600px;
+    position: relative;
+    height:40px;
+    border:6px solid var(--cards);
+    background-color: rgba(242, 173, 95,0.23);
+    border-radius:30px;
+    gap:10px;
+    align-content: center;
+    input{
+        position: absolute;
+        width:90%;
+        margin-left: 15px;
+        height:33px;
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        color:var(--font-white);
+    }
+    .img_search-icon{
+        display: flex;
+        justify-self: end;
+        width:35px;
+        margin-right: 10px;
+    }
+}
+input:focus-visible {
+    outline: none;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    img{
+        width:380px;
+    }
+    button{
+        position:absolute;
+        background-color: var(--cards-button);
+        width:200px;
+        height:45px;
+        color:var(--font-white);
+        font-size: large;
+        font-weight:bold;
+        margin: 30px;
+    }
+}
+/*Cards --------------------------------*/
+
+/*message*/
+.message{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+    h2{
+        background-color: transparent;
+        color:#747373;
+        font-size: 30px;
+    }
+}
+
+.main-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap:25px;
+    margin:40px 100px 40px 100px;
+}
+
+.card{
+    background:var(--cards);
+    width:210px;
+    height:350px;
+    border-radius:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 20px;
+    box-shadow: 0px 0px 20px -9px;
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--card-img-bg);
+        width:210px;
+        height:230px;
+        border-bottom-right-radius: 360px;
+        border-bottom-left-radius: 360px;
+    }
+    .form img{
+        width: 80%;
+        height: auto;
+    }
+    p{
+        font-size: larger;
+        font-weight: 650;
+        text-align: center;
+    }
+}
+
+.card button{
+    background-color: var(--cards-button);
+    width:100px;
+    height:54px;
+    color:var(--font-white);
+    font-size: large;
+    font-weight:bold;
+}
+.card button:hover{
+    box-shadow:0px 0px 9px 1px rgba(0, 0, 0, 0.589) ;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.card .pricing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    margin-bottom:20px;
+    p{
+        margin:0;
+    }
+}
