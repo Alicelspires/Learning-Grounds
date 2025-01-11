@@ -21,16 +21,16 @@ Pages: Below are the preview cards for each project, click on one and you will b
 
 <p align="center">
   <a href="">
-    <img width="48%" src="img-index/PresentationPage.png" alt="apresentation page"/>
+    <img width="48%" src="img/PresentationPage.png" alt="apresentation page"/>
   </a>
   <span width="10px">--</span>
   <a href="https://github.com/Alicelspires/Projects-with-FreeCodeCamp/tree/main/projects/camper_cafe">
-    <img width="48%" src="projects/camper_cafe/assets/img-camperCafe/Project01-CamperCafe.png" alt="Camper Cafe Shop Page" />
+    <img width="48%" src="img/Project01-CamperCafe.png" alt="Camper Cafe Shop Page" />
   </a>
 </p>
 <p align="center">
   <a href="https://github.com/Alicelspires/Projects-with-FreeCodeCamp/tree/main/projects/little_games">
-    <img width="48%" src="projects/little_games/assets/img/Project02-LittleGames.png" alt="Little games"/>
+    <img width="48%" src="img/Project02-LittleGames.png" alt="Little games"/>
   </a>
   <span width="10px">--</span>
   <a href="">
