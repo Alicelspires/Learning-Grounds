@@ -7,7 +7,7 @@
  
 Interesting projects developed from FreeCodeCamp's “Responsive Web Design” and “JavaScript, Algorithms, and Data Structures” courses. This repository brings together creations and enhancements of ideas given in each module of the courses taken. Explore and enjoy! 
 
-**Link** : <a target="_blank">https://alicelspires.github.io/Projects-with-FreeCodeCamp/</a>
+**Link** : https://alicelspires.github.io/Projects-with-Free-Code-Camp/
 
 ### Tools & Languages
 
