@@ -61,7 +61,7 @@ main{
     justify-content: center;
 }
 .container{
-    background: url(/projects/little_games/assets/img/carlos-felipe-ramirez-mesa-g3CsD5K-KZE-unsplash.jpg) no-repeat center center/cover;
+    background: url(../../img/img-littlegames/carlos-felipe-ramirez-mesa-g3CsD5K-KZE-unsplash.jpg) no-repeat center center/cover;
     width: 622px;
     height: 300px;
     border-radius: 10px;
