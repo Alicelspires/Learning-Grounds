@@ -92,7 +92,7 @@ function updateProductsBag(){
         divProduc.setAttribute('class', 'products')
         divProduc.innerHTML = `
             <div class="bg-prod">
-                <img src="/img/img-camperCafe/${item.img}">
+                <img src="../img/img-camperCafe/${item.img}">
                 <p class="name-prod">${item.name}</p>
             </div>
             <p class="desc-prod">${item.desc}</p>
@@ -101,7 +101,7 @@ function updateProductsBag(){
                 <div class="new-price"> U$ ${Number(item.price).toFixed(2)}
                 </div>
             </div>
-            <button class="button-delete" id="button-delete" onclick="removeItem(event)"><img src="/img/img-camperCafe/cross.png"></button>`
+            <button class="button-delete" id="button-delete" onclick="removeItem(event)"><img src="../img/img-camperCafe/cross.png"></button>`
 
         shopping.appendChild(divProduc)
         total += item.price * item.amount
