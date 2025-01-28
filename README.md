@@ -1,13 +1,13 @@
 <div align="center">
   <img width="80px" src="common/logo/icons8-logoProj-white.png" alt="icon">
 
-  # Projects with FreeCodeCamp
+  # Projects with freeCodeCamp
   
 </div>
  
 Interesting projects developed from FreeCodeCamp's “Responsive Web Design” and “JavaScript, Algorithms, and Data Structures” courses. This repository brings together creations and enhancements of ideas given in each module of the courses taken. Explore and enjoy! 
 
-**Link** : [https://alicelspires.github.io/Projects-with-Free-Code-Camp/](https://alicelspires.github.io/Projects-with-Free-Code-Camp/)
+**Link** : [https://alicelspires.github.io/Projects-with-free-Code-Camp/](https://alicelspires.github.io/Projects-with-free-Code-Camp/)
 
 ### Tools & Languages
 
