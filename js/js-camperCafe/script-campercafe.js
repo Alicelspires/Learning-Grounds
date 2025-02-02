@@ -1,29 +1,24 @@
-// Array of infos ----------------------------------------------
-let products = [
-    {name: 'Ristreto', price: 2.50, desc: 'An extremely concentrated and intense coffee, usually served in small quantities', img:'RistretoCoffee.png'},
-    
-    {name: 'Flat White', price: 3.00, desc:'A smooth espresso combined with velvety textured steamed milk.',img:'FlatWhiteCoffee.png'},
+import {products} from './products.js';
 
-    {name: 'Latte', price: 3, desc:'Espresso topped with creamy steamed milk and a touch of foam.',img:'LatteCoffee.png',},
+// Cards -----------------------------------------------------
 
-    {name: 'Cappuccino', price: 4, desc:'A perfect blend of espresso, steamed milk, and a thick foam topping.',img:'CappuccinoCoffee.png',},
+let mainCards = document.querySelector('.main-cards');
+let product = '';
 
-    {name: 'Americano', price: 4, desc:'Espresso diluted with hot water for a mild, aromatic flavor.',img:'AmericanoCoffee.png',},
-
-    {name: 'Macchiato', price: 3.50, desc:'Espresso “marked” with a dash of milk for a bold, smooth taste.',img:'MacchiatoCoffee.png',},
-
-    {name: 'Mocha', price:4, desc:'A sweet mix of espresso, chocolate, and steamed milk, often topped with cream.',img:'MochaCoffee.png',},
-
-    {name: 'Red Eye', price:3.50, desc:'A strong coffee made by adding an espresso shot to brewed coffee. Perfect for extra caffeine.',img:'RedEyeCoffee.png',},
-
-    {name: 'Marocchino', price:4, desc:'Espresso with cocoa powder and milk froth, served in a small glass.',img:'MarocchinoCoffee.png',},
-
-    {name: 'Espresso Tonic', price:4.50, desc:'A refreshing mix of espresso and tonic water over ice.',img:'ExpressoTonicCoffee.png',},
-
-    {name: 'Vienna Coffee', price:4.50, desc:'Two shots of espresso topped with whipped cream, served without milk.',img:'ViennaCoffee.png',},
-
-    {name: 'Cuban Coffee', price:3, desc:'Sweetened espresso brewed with sugar for a bold, rich flavor.',img:'CubanCoffee.png',},
-]
+products.forEach((prod) => {
+    product+=`
+            <div class="card">
+                <div class="form">
+                    <img src="../img/img-camperCafe/${prod.img}" alt="${prod.name}">
+                </div>
+                <p>${prod.name}</p>
+                <div class="pricing">
+                    <p>R$ <span>${prod.price.toFixed(2)}</span></p>
+                    <button type="submit" id="btn">Add</button>
+                </div>
+            </div>`
+    mainCards.innerHTML = product
+})
 
 // Search ------------------------------------------------------
 
