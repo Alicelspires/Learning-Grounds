@@ -121,6 +121,58 @@
         }
     }
 }
+
+/*Content of the body*/
+.content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin:0 40px 40px 40px;
+    hr{
+        width:90%;
+        border: dotted 3px white;
+        margin:40px;
+    }
+}
+
+.buying{
+    background:var(--card-img-bg);
+    border-radius: 10px;
+    height:40px;
+    width:77vw;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    .buy{
+        display: flex;
+        gap:8px;
+    }
+    p{
+        font-size:1.2em;
+        font-weight:600;
+        display:flex;
+        align-items: center;
+        margin:12px;
+    }
+    img{
+        height:40px;
+        width:auto;
+    }
+    button{
+        height:40px;
+        width:auto;
+        background-color: var(--color-nav-footer);
+        color:var(--font-white);
+        font-size:medium;
+        font-weight:600;
+        padding:15px;
+        display:inline-flex;
+        align-items:center;
+        padding-bottom:18px;
+    }
+}
+
 @media(max-width:1184px){
     .shopping{
         display:flex;
@@ -182,53 +234,9 @@
     }
 }
 
-/*Content of the body*/
-.content{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    margin:0 40px 40px 40px;
-    hr{
-        width:90%;
-        border: dotted 3px white;
-        margin:40px;
-    }
-}
-
-.buying{
-    background:var(--card-img-bg);
-    border-radius: 10px;
-    height:40px;
-    width:77vw;
-    display:flex;
-    justify-content: space-between;
-    align-content: center;
-    .buy{
-        display: flex;
-        gap:8px;
-    }
-    p{
-        font-size:1.2em;
+@media(max-width:497px){
+    .buying p{
+        font-size: 1rem;
         font-weight:600;
-        display:flex;
-        align-items: center;
-        margin:12px;
-    }
-    img{
-        height:40px;
-        width:auto;
-    }
-    button{
-        height:40px;
-        width:auto;
-        background-color: var(--color-nav-footer);
-        color:var(--font-white);
-        font-size:medium;
-        font-weight:600;
-        padding:15px;
-        display:inline-flex;
-        align-items:center;
-        padding-bottom:18px;
     }
 }

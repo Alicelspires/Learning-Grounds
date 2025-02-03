@@ -4,7 +4,6 @@
     margin:0;
 }
 :root {
-    --color-nav-footer: #377478;
     --color-background: #10375C;
     --font-black: #111111;
     --font-white:#f5f4ed;
@@ -24,8 +23,11 @@ a{
 .header {
     width:auto;
     color:white;
-    padding:15px;
-    background-color: var(--color-nav-footer);
+    padding:5px;
+    border:3px solid rgba(199, 199, 199, 0.671);
+    margin:20px;
+    box-sizing: border-box;
+    border-radius:20px;
     nav{
         align-items: center;
         display:flex;
@@ -61,7 +63,7 @@ main{
     justify-content: center;
 }
 .container{
-    background: url(../../img/img-littlegames/carlos-felipe-ramirez-mesa-g3CsD5K-KZE-unsplash.jpg) no-repeat center center/cover;
+    background: url('../img/img-littlegames/bg-image-rpGame.jpg') no-repeat center center/cover;
     width: 622px;
     height: 300px;
     border-radius: 10px;

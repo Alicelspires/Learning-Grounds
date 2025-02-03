@@ -17,7 +17,6 @@ body{
     background-color: var(--color-background);
     margin:0;
     width:100%;
-    min-height: 100vh;
     font-family: "Quicksand", sans-serif;
     display:flex;
     flex-direction:column;
@@ -80,12 +79,8 @@ button{
     .button_logo{
         display:flex;
         margin-right:10px;
+        align-items: center;
     }
-}
-/*Main content of the page-----------------------*/
-
-.main-content-page{
-    flex:1;
 }
 
 /*Footer ----------------------------------------*/
@@ -165,5 +160,25 @@ footer hr{
         img{
             margin-bottom:5px;
         }
+    }
+}
+
+@media(max-width:460px){
+    .header button{
+        width:90px;
+        height:35px;
+        font-size:1.1rem;
+    }
+    button .img{
+        width:10px;
+    }
+    .logotipo{
+        display: none;
+    }
+    .header .logo-icone{
+        margin-left:1px;
+    }
+    .header .button_logo{
+        margin-right:0px;
     }
 }

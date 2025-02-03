@@ -54,6 +54,7 @@ a{
     margin:0;
     padding:30px;
     flex:1;
+
 }
 
 /*Status and medias*/
@@ -88,13 +89,18 @@ a{
     .row-media{
         display:flex;
         align-items: center;
-        p, a{
+        p,a{
             color:var(--font-black);
+            display:flex;
+            flex-direction: row;
+        }
+        p{
             margin:10px;
             font-weight: 500;
         }
     }
 }
+
 /*Cards*/
 .main {
     float:right;
@@ -177,6 +183,16 @@ a{
         border-right: none;
         display: block;
         gap:0px;
+    }
+    .sidebar .medias{
+        width:123px;
+        display: flex;
+    }
+    .media-text{
+       width: 20px;
+    }
+    .sidebar .row-media p{
+        display:none;
     }
 }
 
