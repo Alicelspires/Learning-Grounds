@@ -12,10 +12,12 @@ function updateProductsBag(){
                 <img src="../img/img-camperCafe/${item.img}">
                 <p class="name-prod">${item.name}</p>
             </div>
-            <p class="desc-prod">${item.desc}</p>
+            <div>
+                <p class="desc-prod">${item.desc}</p>
+            </div>
             <div class="price">
                 <input type="number" min="1" value="${item.amount}" onchange="updateAmount('${item.name}', this.value)">
-                <div class="new-price"> U$ ${Number(item.price).toFixed(2)}
+                <div class="new-price">$ ${Number(item.price).toFixed(2)}
                 </div>
             </div>
             <button class="button-delete" id="button-delete" onclick="removeItem(event)"><img src="../img/img-camperCafe/cross.png"></button>`
@@ -23,7 +25,7 @@ function updateProductsBag(){
         shopping.appendChild(divProduc)
         total += item.price * item.amount
     })
-    document.querySelector('.total-price').innerText = `U$ ` + total.toFixed(2)
+    document.querySelector('.total-price').innerText = `$ ` + total.toFixed(2)
 }
 
 // buying products and removing them to the localStorage ------------
@@ -31,7 +33,7 @@ function buyingProduct(){
     document.querySelector('.shopping').innerHTML =''
     document.querySelector('.total-price').innerHTML = 'U$ 0.00'
     localStorage.removeItem('bag')
-    alert('Compra finalizada com sucesso');
+    alert('Successful purchase');
 }
 
 // remove item from bag with each especific card button -------------
@@ -45,7 +47,6 @@ function removeItem(e){
     let bag = JSON.parse(localStorage.getItem('bag')) || []
     bag = bag.filter(item => item.name !== divProductName)
     localStorage.setItem('bag', JSON.stringify(bag));
-    console.log(`Produto '${divProductName}' removido com sucesso!`);
 }
 
 // update amount

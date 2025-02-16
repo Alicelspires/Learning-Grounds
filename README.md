@@ -34,6 +34,6 @@ Pages: Below are the preview cards for each project, click on one and you will b
   </a>
   <span width="10px">--</span>
   <a href="">
-    <img width="48%" src="projects/camper_cafe/assets/img-camperCafe/" alt="" />
+    <img width="48%" src="img/Project03-To-Do.png" alt="To-Do page" />
   </a>
 </p>

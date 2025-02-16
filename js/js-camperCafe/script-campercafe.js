@@ -13,9 +13,10 @@ products.forEach((prod) => {
                 </div>
                 <p>${prod.name}</p>
                 <div class="pricing">
-                    <p>R$ <span>${prod.price.toFixed(2)}</span></p>
-                    <button type="submit" id="btn">Add</button>
+                    <p>$ <span>${prod.price.toFixed(2)}</span></p>
+                    <button class="adding" type="submit" id="btn">Add</button>
                 </div>
+                <p class="info-coffee">Info &#x2197;</p>
             </div>`
     mainCards.innerHTML = eachProduct
 })
@@ -62,7 +63,7 @@ document.querySelectorAll('#btn').forEach((button, index) =>{
     AddCardProducts(index)})
 })
 
-function AddCardProducts(index){
+export function AddCardProducts(index){
     let product = products[index]
     let bag = JSON.parse(localStorage.getItem('bag')) || []
     let foundProduc = bag.find(item => item.name == product.name)
