@@ -21,28 +21,28 @@ Pages: Below are the preview cards for each project, click on one and you will b
 
 <p align="center">
   <a href="index.html">
-    <img width="48%" src="img/PresentationPage.png" alt="apresentation page"/>
+    <img width="48%" src="./img/PresentationPage.png" alt="apresentation page"/>
   </a>
   <span width="10px">--</span>
   <a href="projects/camper_cafe.html">
-    <img width="48%" src="img/Project01-CamperCafe.png" alt="Camper Cafe Shop Page" />
+    <img width="48%" src="./img/Project01-CamperCafe.png" alt="Camper Cafe Shop Page" />
   </a>
 </p>
 <p align="center">
   <a href="projects/mini_RPG.html">
-    <img width="48%" src="img/Project02-LittleGames.png" alt="Little games"/>
+    <img width="48%" src="./img/Project02-LittleGames.png" alt="Little games"/>
   </a>
   <span width="10px">--</span>
-  <a href="#">
-    <img width="48%" src="img/Project03-To-Do.png" alt="To-Do page" />
+  <a href="./projects/to-do.html">
+    <img width="48%" src="./img/Project03-To-Do.png" alt="To-Do page" />
   </a>
 </p>
 <p align="center">
-  <a href="#">
-    <img width="48%" src="img/Project04-InstruPro.png" alt="Little games"/>
+  <a href="./projects/InstruPRO.html">
+    <img width="48%" src="./img/Project04-InstruPro.png" alt="Instru Pro"/>
   </a>
   <span width="10px">--</span>
-  <a href="#">
-    <img width="48%" src="img/#" alt="To-Do page" />
+  <a href="">
+    <img width="48%" src="" alt="" />
   </a>
 </p>
