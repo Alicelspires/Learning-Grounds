@@ -41,7 +41,9 @@ h1{
 }
 
 /* main section ---------------------------- */
-
+.slogan{
+    color:rgb(255, 255, 255)
+}
 main{
     background-color: var(--sections);
     display: flex;

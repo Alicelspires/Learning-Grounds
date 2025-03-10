@@ -1,5 +1,5 @@
 :root{
-    --bg-card:#cdcf9d94;
+    --bg-card:#cdcf9da4;
     --btn-play-again:#FFCF2A;
     --btn-reset-score:#FF6429;
     --hand-check:#8CFF15;
@@ -9,11 +9,13 @@
     --font-size01:1.2rem;
     --font-size02:1.1rem;
     --font-size03:1rem;
+    --font-size04:1.5rem;
 }
 
 body{
-    background: url('../../img/img-littlegames/radiant-gradient.png') repeat center;
-    background-size:cover;
+    background: url('../../img/img-littlegames/radiant-gradient.png');
+    background-repeat:repeat;
+    background-size:auto;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -23,11 +25,10 @@ body{
 /* game section ------------------------ */
 
 section{
-    width:35vw;
-    height:80vh;
+    padding:60px;
     display:flex;
     justify-content: center;
-    gap:30px;
+    gap:20px;
     flex-direction: column;
     align-items: center;
     background-color: var(--bg-card);
@@ -36,7 +37,7 @@ section{
 }
 main{
     display:flex;
-    gap:25px;
+    gap:20px;
     div{
         width:120px;
         height:120px;
@@ -53,8 +54,17 @@ main{
         width:60px;
     }
 }
-h3{
-    font-size:var(--font-size01)
+section h3{
+    display:none;
+    margin-top:20px;
+    font-size:var(--font-size04);
+    text-shadow: 
+        0px 0px 10px var(--btn-play-again),
+        0px 0px 20px var(--btn-play-again);
+    color:#fff16e;
+}
+main div:hover{
+    border-color: var(--hand-check);
 }
 
 .info{
@@ -65,6 +75,9 @@ h3{
     gap:30px;
     font-size:var(--font-size02);
     font-weight: 550;
+}
+.info > span > img{
+    width:45px;
 }
 .winner{
     display:flex;
@@ -104,4 +117,90 @@ button:hover{
     box-shadow: 3px 3px 1px 1px;
     transform: translateY(-5px);
     animation: ease-in-out .2s;
+}
+/* pop-up final result */
+.bg-popUp{
+    display:none;
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #0000008e;
+    backdrop-filter: blur(4px);
+    z-index: 6;
+    overflow: hidden;
+}
+.bg-popUp div span{
+    text-align: center;
+}
+.bg-popUp div{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    height:400px;
+    background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+    gap:20px;
+    color:#fff;
+    font-size: 1.1rem;
+    border:5px solid rgba(255, 255, 255, 0.349);
+}
+.bg-popUp div hr{
+    width:86%;
+    border:2px solid #fff;
+}
+.bg-popUp div span .value{
+    font-size:1.5rem;
+    font-weight: 600;
+}
+
+/* responsive page*/
+@media(max-width:700px){
+    section{
+        padding:50px 40px;
+    }
+    main div{
+        width:100px;
+        height:100px;
+    }
+}
+@media(max-width:532px){
+    section{
+        padding:40px 30px;
+    }
+    main div{
+        width:75px;
+        height:75px;
+    }
+    main div > img{
+        width:42px;
+    }
+    .features{
+        flex-wrap: wrap;
+        gap:18px;
+    }
+    .btns{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width:328px){
+    section{
+        padding:20px 15px;
+    }
+    main div{
+        width:70px;
+        height:70px;
+    }
+    main div > img{
+        width:40px;
+    }
 }

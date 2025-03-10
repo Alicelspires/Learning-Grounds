@@ -9,7 +9,7 @@
     --color-background: #0B1E27;
     --font-black: #111111;
     --font-white:#f5f4ed;
-    --cards: #C6AB74;
+    --cards: #e4c68c;
     --cards-hover:#e2c88f;
     --buttons: #B1C29E;
 }
@@ -30,7 +30,10 @@ a{
     padding:30px;
     background-color: var(--color-nav-footer);
     border-bottom-right-radius: 90%;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    box-shadow: 
+    rgba(17, 17, 26, 0.1) 0px 4px 16px, 
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, 
+    rgba(17, 17, 26, 0.1) 0px 16px 56px;
 
     nav{
         display:inline-flex;
@@ -70,7 +73,7 @@ a{
         padding-top:5px;
     }
     .photo{
-        width:50px;
+        width:70px;
         clip-path: circle(49%);
         margin:5px;
     }
@@ -119,7 +122,7 @@ a{
     width:260px;
     margin:10px;
     border-style: solid;
-    border-color:#C6AB74;
+    border-color: #e4c68c;
     border-radius: 15px;
     box-sizing: border-box;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;

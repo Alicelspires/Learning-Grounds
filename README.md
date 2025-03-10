@@ -33,7 +33,16 @@ Pages: Below are the preview cards for each project, click on one and you will b
     <img width="48%" src="img/Project02-LittleGames.png" alt="Little games"/>
   </a>
   <span width="10px">--</span>
-  <a href="">
+  <a href="#">
     <img width="48%" src="img/Project03-To-Do.png" alt="To-Do page" />
+  </a>
+</p>
+<p align="center">
+  <a href="#">
+    <img width="48%" src="img/Project04-InstruPro.png" alt="Little games"/>
+  </a>
+  <span width="10px">--</span>
+  <a href="#">
+    <img width="48%" src="img/#" alt="To-Do page" />
   </a>
 </p>
