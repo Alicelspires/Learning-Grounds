@@ -30,7 +30,7 @@ Pages: Below are the preview cards for each project, click on one and you will b
 </p>
 <p align="center">
   <a href="projects/mini_RPG.html">
-    <img width="48%" src="./img/Project02-littleGames.png" alt="Little games"/>
+    <img width="48%" src="./img/Project02-LittleGames.png" alt="Little games"/>
   </a>
   <span width="10px">--</span>
   <a href="./projects/dragonRepeller_RPG.html">
