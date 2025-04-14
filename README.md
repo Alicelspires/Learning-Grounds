@@ -30,19 +30,28 @@ Pages: Below are the preview cards for each project, click on one and you will b
 </p>
 <p align="center">
   <a href="projects/mini_RPG.html">
-    <img width="48%" src="./img/Project02-LittleGames.png" alt="Little games"/>
+    <img width="48%" src="./img/Project02-littleGames.png" alt="Little games"/>
   </a>
   <span width="10px">--</span>
-  <a href="./projects/to-do.html">
-    <img width="48%" src="./img/Project03-To-Do.png" alt="To-Do page" />
+  <a href="./projects/dragonRepeller_RPG.html">
+    <img width="48%" src="./img/Project02-01-littleGames.png" alt="Dragon Repeller" />
   </a>
 </p>
 <p align="center">
-  <a href="./projects/InstruPRO.html">
-    <img width="48%" src="./img/Project04-InstruPro.png" alt="Instru Pro"/>
+  <a href="projects/rockPaperScissors.html">
+    <img width="48%" src="./img/Project02-02-littleGames.png" alt="Rock Paper and Scissors"/>
   </a>
   <span width="10px">--</span>
-  <a href="">
-    <img width="48%" src="" alt="" />
+  <a href="./projects/ticTacToe.html">
+    <img width="48%" src="./img/Project02-03-littleGames.png" alt="Tic-Tac-Toe" />
+  </a>
+</p>
+<p align="center">
+  <a href="./projects/to-do.html">
+    <img width="48%" src="./img/Project03-To-Do.png" alt="To-Do page"/>
+  </a>
+  <span width="10px">--</span>
+  <a href="./projects/InstruPRO.html">
+    <img width="48%" src="./img/Project04-InstruPro.png" alt="Instru Pro" />
   </a>
 </p>

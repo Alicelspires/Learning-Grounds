@@ -22,40 +22,43 @@
     </div>
     
     <main>
-        <div class="levels">
-            <span class="level">0</span>
-            <h1>YOU</h1>
+        <div class="btns">
+            <button id="again">Reset game</button>
         </div>
 
-        <section>
-            <div class="btns">
-                <button>Reset Score</button>
-                <button>Play Again</button>
-            </div>
-            <div class="square">
-                <div class="first row">
-                    <div class="div01"><div id="element"></div></div>
-                    <div class="div02"><div id="element"></div></div>
-                    <div class="div03"><div id="element"></div></div>
-                </div>
-                <div class="second row">
-                    <div class="div04"><div id="element"></div></div>
-                    <div class="div05"><div id="element"></div></div>
-                    <div class="div06"><div id="element"></div></div>
-                </div>
-                <div class="third row">
-                    <div class="div07"><div id="element"></div></div>
-                    <div class="div08"><div id="element"></div></div>
-                    <div class="div09"><div id="element"></div></div>
-                </div>
-            </div>
-        </section>
-
         <div class="levels">
-            <span class="level">0</span>
-            <h1>COMPUTER</h1>
+            <span>
+                <span class="level">0</span>
+                <h3>you</h3>
+            </span>
+            <span>
+                <span class="level">0</span>
+                <h3>computer</h3>
+            </span>
+        </div>
+
+        <h1 id="message"></h1>
+
+        <div class="turn-container">
+            <h3>Turns</h3>
+            <span>
+                <div class="turn-box">X</div>
+                <div class="turn-box">O</div>
+            </span>
+        </div>
+
+        <div class="square">
+            <div class="first row">1</div>
+            <div class="second row">2</div>
+            <div class="third row">3</div>
+            <div class="forth row">4</div>
+            <div class="fifth row">5</div>
+            <div class="sixth row">6</div>
+            <div class="seventh row">7</div>
+            <div class="eigth row">8</div>
+            <div class="nineth row">9</div>
         </div>
     </main>
-
+    <script src="../js/js-littleGames/ticTacToe.js"></script>
 </body>
 </html>

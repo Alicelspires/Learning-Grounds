@@ -10,7 +10,7 @@ a{
 
 /*Navbar ----------------------------------------*/
 .header {
-    width:95%;
+    width:auto;
     color:white;
     padding:5px;
     border:3px solid rgba(199, 199, 199, 0.521);

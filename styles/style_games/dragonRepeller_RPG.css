@@ -15,7 +15,7 @@ body::after{
     top:0;
     left:0;
     width:100%;
-    height:100%;
+    height:100vh;
     z-index:1;
     background: linear-gradient(to left, rgba(0,0,0,0.4), rgb(34, 33, 39, 1));
 }
@@ -34,13 +34,21 @@ aside{
     display:flex;
     flex-direction:column;
     align-items: center;
+    flex-wrap: nowrap;
     color:white;
     justify-content: space-around;
     p{
         margin:10px;
     }
 }
+.logo{
+    width:clamp(200px, 30vw, 340px);
+}
+.arrow{
+    width:clamp(20px, 20vw, 80px);
+}
 .warrior{
+    width:clamp(100px, 20vw, 200px);
     background-color: rgba(255,255, 255, 0.2);
     padding:10px;
     border-radius: 10px;
@@ -85,10 +93,9 @@ aside{
     flex-direction: column;
     align-items: center;
     background-color: var(--bg-move);
-    width: 600px;
-    min-width:455px;
+    width: clamp(200px, 95vw, 600px);
     height: 500px;
-    margin: 30px auto 0px;
+    margin: 30px auto;
     border-radius:20px;
     border: 4px solid #fff;
 }
@@ -106,16 +113,20 @@ aside{
 }
 .stat{
     background-color:var(--button-stats);
-    padding:10px 15px;
+    padding:10px;
     border-radius:10px ;
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
 }
 
 #controls {
-    margin:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
     button {
     cursor: pointer;
     color: #0a0a23;
-    padding: 8px 15px;
+    padding: 8px;
     background-color: #feac32;
     background-image: linear-gradient(#fecc4c, #ffac33);
     border: 3px solid #feac32;
@@ -127,13 +138,22 @@ aside{
     margin:0 10px;
   }
 }
+#controls button{
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
+}
 
 #monsterStats{
     display: none;
-    border:1px solid #0a0a23;
-    padding:5px;
-    color:white;
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color:#fff;
+    width:100%;
+    box-sizing: border-box;
     background-color: #c70d0d;
+    padding:10px;
+    .stats{
+        margin-right:10px;
+    }
 }
 #text{
     background-color: var(--bg-text);
@@ -143,4 +163,11 @@ aside{
     border-radius:0 0 20px 20px;
     padding:10px 20px;
     box-sizing: border-box;
+}
+@media(max-width:1186px){
+    body::after{
+        width:100vw;
+        height: clamp(100vh, 20vw, 151vh);
+        background: linear-gradient(to top, rgba(0,0,0,0.4), rgb(34, 33, 39, 1));
+    }
 }

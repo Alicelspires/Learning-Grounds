@@ -109,9 +109,9 @@ function finalResult(){
     let count = scoreBoard.wins + scoreBoard.ties + scoreBoard.losses
     let message = '';
 
-    if(scoreBoard.wins < count){
+    if(scoreBoard.wins < scoreBoard.losses){
         message = 'How Sad'
-    } else if(scoreBoard.wins <= count){
+    } else if(scoreBoard.wins <= scoreBoard.losses){
         message = 'Oh!, almost there'
     } else {
         message = 'Congratulations'
@@ -123,7 +123,7 @@ function finalResult(){
             <h2>${message}</h2>
             <hr>
             <span>
-                <p>Your score is <span class="value">${scoreBoard.wins}</span> points in <span class="value">${count}</span> rounds</p>
+                <p>Your score is <span class="value">${scoreBoard.wins}</span> point(s) out of <span class="value">${count}</span> rounds</p>
                 <img width="150px;" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnl0MzY0ZTlhN3QyMGg4ejV5Nnhkd3Rwa24zbjk3OWQwM3Q4ZTVnZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ykZS4KGnpdlY2f7XHg/giphy.gif" alt="">
                 <p>Share your results with your friends</p>
             </span>

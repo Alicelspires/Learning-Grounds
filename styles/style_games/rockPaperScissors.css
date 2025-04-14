@@ -1,5 +1,5 @@
 :root{
-    --bg-card:#cdcf9da4;
+    --bg-card:#c6c97765;
     --btn-play-again:#FFCF2A;
     --btn-reset-score:#FF6429;
     --hand-check:#8CFF15;
@@ -17,7 +17,6 @@ body{
     background-repeat:repeat;
     background-size:auto;
     display:flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -31,6 +30,7 @@ section{
     gap:20px;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     background-color: var(--bg-card);
     border-radius:20px;
     border:5px solid rgba(255, 255, 255, 0.349);
@@ -61,7 +61,7 @@ section h3{
     text-shadow: 
         0px 0px 10px var(--btn-play-again),
         0px 0px 20px var(--btn-play-again);
-    color:#fff16e;
+    color:#fff8bb;
 }
 main div:hover{
     border-color: var(--hand-check);
@@ -139,7 +139,7 @@ button:hover{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    width:400px;
+    width:clamp(200px, 60vw,400px);
     height:400px;
     background: var(--bg-card);
     display: flex;
@@ -148,6 +148,7 @@ button:hover{
     align-items: center;
     border-radius:20px;
     gap:20px;
+    padding:15px;
     color:#fff;
     font-size: 1.1rem;
     border:5px solid rgba(255, 255, 255, 0.349);
