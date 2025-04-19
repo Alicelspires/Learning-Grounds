@@ -55,3 +55,9 @@ Pages: Below are the preview cards for each project, click on one and you will b
     <img width="48%" src="./img/Project04-InstruPro.png" alt="Instru Pro" />
   </a>
 </p>
+
+<div align="center">
+  
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=Alicelspires.Project-with-free-Code-Camp&left_color=grey&right_color=black&left_text=Visitors)
+
+</div> 
