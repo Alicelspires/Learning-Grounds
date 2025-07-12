@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/styles/style_campercafe/bag.css">
+    <link rel="stylesheet" href="../../assets/styles/style_campercafe/components_cc.css">
+    <link rel="stylesheet" href="../../assets/styles/style_campercafe/products.css">
+    <link rel="stylesheet" href="../../assets/styles/style_campercafe/pop-up.css">
+    <link rel="shortcut icon" href="../../assets/img/img-camperCafe/icons8-logoCamperCafe.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c9fc2a1cab.js" crossorigin="anonymous"></script>
+    <title>Camper Cafe</title>
+</head>
+<body onload="updateProductsBag()">
+
+    <header class="header"></header>
+
+    <div class="overlay"></div>
+
+    <main class="main-content-page">
+        <span class="title">
+            <span><img src="../../assets/img/img-camperCafe/graosdecafe.png" alt=""></span><h1>Bag</h1>
+            <p>Where you can find your added products</p>
+        </span>
+        <hr class="line">
+        <div class="products-bag-area">
+
+            <section>
+                <div class="shopping"></div>
+            </section>
+
+            <aside class="content">
+                <div class="buying">
+                    <p id="ttprice" class="total-price">U$ 0.00</p>
+                </div>
+                <div class="buy">
+                    <div>
+                        <img src="../../assets/img/img-camperCafe/visa.png" alt="credit card Visa">
+                        <img src="../../assets/img/img-camperCafe/mastercard.png" alt="credit card Mastercard">
+                        <img src="../../assets/img/img-camperCafe/amex.png" alt="credit card Amex">
+                    </div>
+                    <button type="submit" class="buttonPayment" onclick="buyingProduct()">Buy now</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    
+    <script src="../../assets/js/js-camperCafe/script-bag.js"></script>
+    <script type="module" defer src="../../assets/js/js-camperCafe/pop-up.js"></script>
+    <script src="../../assets/js/js-camperCafe/navbar-footer.js"></script>
+</body>
+</html>

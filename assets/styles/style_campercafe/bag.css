@@ -1,0 +1,141 @@
+/*Title page -----------------------------------*/ 
+.main-content-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:80px;
+    color:var(--font-white);
+}
+.title img{
+    background-color: #fff;
+    padding:10px;
+    border-radius: 50%;
+    width:40px;
+    height:auto;
+}
+.title p{
+    margin-top:10px;
+}
+hr.line{
+    width:80%;
+    border: dotted 3px white;
+    margin:20px;
+}
+/* Bag section products ------------------------ */
+
+.products-bag-area{
+    display:flex;
+    width: 80%;
+    justify-content: space-between;
+    padding-bottom:50px;
+}
+.shopping{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+/*Dynamic cart ----------------------------------*/
+.card hr{
+    width:100%;
+}
+.update-bag{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.price input{
+    width:80px;
+    padding:10px;
+    border-radius:30px;
+    border:none;
+}
+.update-bag button{
+    width:30px;
+    height:30px;
+    background-color: #C40B0B;
+    border-radius:50px;
+    background-image: url('../../img/img-camperCafe/cross.png');
+    background-position: center;
+    background-size: cover;
+    border: 8px solid #C40B0B;
+    box-sizing: border-box;
+}
+/*Content of the body -------------------*/
+aside.content{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    position:static;
+    gap:10px;
+}
+.buying{
+    background:var(--font-white);
+    border-radius: 10px;
+    width:clamp(100px, 20vw, 220px);
+    padding:10px;
+    font-size:var(--font-size-02);
+    font-weight:600;
+}
+.buy{
+    display: flex;
+    gap:8px;
+    align-items: center;
+    justify-content: center;
+    width:240px;
+    margin-bottom:50px;
+}
+.buy div{
+    display:flex;
+    gap:10px;
+}
+.buy img{
+    height:40px;
+    width:auto;
+}
+.buy button{
+    height:40px;
+    width:auto;
+    background: var(--color-nav-footer);
+    color:var(--font-white);
+    font-size:var(--font-size-04);
+    font-weight:600;
+    padding:15px;
+    display:inline-flex;
+    align-items:center;
+    padding-bottom:18px;
+    white-space:nowrap;
+}
+
+/* Responsive ----------------------- */
+
+@media(max-width:858px){
+    .buy{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:714px){
+    .products-bag-area{
+        flex-direction: column;
+        width:100%;
+    }
+    .shopping{
+        display: flex;
+        justify-content: center;
+    }
+    .buying{
+        width:90%;
+        margin-top:20px;
+    }
+    div.buy{
+        flex-wrap: nowrap;
+    }
+}

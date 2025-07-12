@@ -1,11 +1,12 @@
 <div align="center">
   <img width="80px" src="common/logo/icons8-logoProj-white.png" alt="icon">
 
-  # Projects with freeCodeCamp
+  # Learning Grounds – A Path of Projects
   
 </div>
  
-Interesting projects developed from FreeCodeCamp's “Responsive Web Design” and “JavaScript, Algorithms, and Data Structures” courses. This repository brings together creations and enhancements of ideas given in each module of the courses taken. Explore and enjoy! 
+A collection of small web projects developed during FreeCodeCamp’s “Responsive Web Design” and “JavaScript Algorithms and Data Structures” courses, with added inspiration from The Odin Project.
+This portfolio brings together creative builds and refinements that showcase foundational web development skills, combining clean design principles with dynamic, interactive features. 
 
 **Link** : [https://alicelspires.github.io/Projects-with-free-Code-Camp/](https://alicelspires.github.io/Projects-with-free-Code-Camp/)
 
@@ -20,39 +21,39 @@ Pages: Below are the preview cards for each project, click on one and you will b
 ## Building in progress...🚧
 
 <p align="center">
-  <a href="index.html">
-    <img width="48%" src="./img/PresentationPage.png" alt="apresentation page"/>
+  <a href="./pages/html-camperCafe/camper_cafe.html">
+    <img width="48%" src="./assets/img/Project01-CamperCafe.png" alt="Camper Cafe Shop Page" />
   </a>
   <span width="10px">--</span>
-  <a href="projects/camper_cafe.html">
-    <img width="48%" src="./img/Project01-CamperCafe.png" alt="Camper Cafe Shop Page" />
+  <a href="./pages/html-instruPro/InstruPro.html">
+    <img width="48%" src="./assets/img/Project04-InstruPro.png" alt="Instru Pro"/>
   </a>
 </p>
 <p align="center">
-  <a href="projects/mini_RPG.html">
-    <img width="48%" src="./img/Project02-LittleGames.png" alt="Little games"/>
+  <a href="./pages/html-homeGames/homeGames.html">
+    <img width="48%" src="./assets/img/Project02-homeGames.png" alt="Little games"/>
   </a>
   <span width="10px">--</span>
-  <a href="./projects/dragonRepeller_RPG.html">
-    <img width="48%" src="./img/Project02-01-littleGames.png" alt="Dragon Repeller" />
+  <a href="./pages/html-homeGames/dragonRepeller_RPG.html">
+    <img width="48%" src="./assets/img/Project02-01-homeGames.png" alt="Dragon Repeller" />
   </a>
 </p>
 <p align="center">
-  <a href="projects/rockPaperScissors.html">
-    <img width="48%" src="./img/Project02-02-littleGames.png" alt="Rock Paper and Scissors"/>
+  <a href="./pages/html-homeGames/rockPaperScissors.html">
+    <img width="48%" src="./assets/img/Project02-02-homeGames.png" alt="Rock Paper and Scissors"/>
   </a>
   <span width="10px">--</span>
-  <a href="./projects/ticTacToe.html">
-    <img width="48%" src="./img/Project02-03-littleGames.png" alt="Tic-Tac-Toe" />
+  <a href="./pages/html-homeGames/ticTacToe.html">
+    <img width="48%" src="./assets/img/Project02-03-homeGames.png" alt="Tic-Tac-Toe" />
   </a>
 </p>
 <p align="center">
-  <a href="./projects/to-do.html">
-    <img width="48%" src="./img/Project03-To-Do.png" alt="To-Do page"/>
+  <a href="./pages/html-homeGames/hangmanGame.html">
+    <img width="48%" src="./assets/img/Project02-04-homeGames.png" alt="Hangman Game"/>
   </a>
   <span width="10px">--</span>
-  <a href="./projects/InstruPRO.html">
-    <img width="48%" src="./img/Project04-InstruPro.png" alt="Instru Pro" />
+  <a href="./pages/html-toDo/to-do.html">
+    <img width="48%" src="./assets/img/Project03-To-Do.png" alt="To-Do page" />
   </a>
 </p>
 

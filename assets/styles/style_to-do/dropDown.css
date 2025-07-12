@@ -1,0 +1,43 @@
+.color-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.color-toggle {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.color-options {
+  display: none;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #222222da;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+.color-dropdown.show .color-options {
+  display: flex;
+  gap: 8px;
+}
+
+.color-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.2s ease;
+}
+.color-circle:hover {
+  transform: scale(1.2);
+}

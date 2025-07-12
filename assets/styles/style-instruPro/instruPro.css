@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Quicksand", sans-serif;
+}
+:root{
+    --bg:#0e0e0e;
+    --footer:#AA1200;
+    --shadow: 4px 4px 0px 1px var(--footer);
+    --font-white:#f3f3f3;
+    --font-black:#050505;
+    --button:#D3B170;
+    --font-size01:1rem;
+    --font-size02:1.1rem;
+    --font-size03:2.2rem;
+}
+body{
+    background-color: var(--bg);
+}
+
+a{
+    text-decoration: none;
+}
+
+header div button:hover,
+.hero:hover,
+.search input:hover,
+.dropdown-menu:hover{
+    box-shadow: none;
+    transform: translateX(4px) translateY(4px);
+}
+
+/* Navbar --------------- */
+header{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    box-sizing: border-box;
+}
+header div{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+img#logo-home{
+    width:40px;
+}
+header img#logo{
+    width:80px;
+    height:100%
+}
+
+/* Hero section ----------- */
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:10px 0px;
+}
+.hero{
+    border-radius:30px;
+    display:flex;
+    width:96%;
+    justify-content: center;
+    height:260px;
+    background: url('../../img/img-instruPro/hero-img.jpg');
+    background-size:cover;
+    background-position: center;
+    filter: saturate(1.2);
+    box-shadow: var(--shadow);
+}
+
+/* DropDown button menu ---------- */
+header div button{
+    background:var(--button);
+    padding:8px 20px;
+    border-radius:10px;
+    border:none;
+    font-size:clamp(.9rem, 1rem, var(--font-size02));
+    font-weight: 600;
+    box-shadow:var(--shadow);
+    cursor:pointer
+}
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+.dropdown-menu {
+    width:95px;
+    display: none;
+    position: absolute;
+    background: var(--button);
+    list-style: none;
+    padding: 5px;
+    margin-top:10px;
+    color:var(--font-black);
+    padding:0px;
+    border-radius:10px;
+    box-shadow:var(--shadow);
+}
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size:clamp(.9rem, 1rem, var(--font-size02));
+}
+
+.dropdown-menu li:hover {
+    background-color: #f2f2f280;
+    border-radius:10px;
+}
+
+/*  Presentation section --------- */
+section.presentation{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    padding:30px;
+}
+.img-01{
+    border-radius: 10px;
+    width:clamp(300px, 50vw, 550px);
+    height:clamp(160px, 44vh, 270px);
+    object-fit: cover;
+}
+.presentation div.info{
+    float:left;
+    color:var(--font-white)
+}
+div.info{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin:10px;
+}
+.info h1{
+    font-size: var(--font-size03);
+    text-shadow: 0 0 10px #ffffff,
+                    0 0 20px var(--button),
+                    0 0 60px var(--button),
+                    0 0 100px var(--button);
+    color:#e2e2e2;
+    margin-bottom:15px;
+}
+.presentation-text img{
+    width:50px;
+    height:50px;
+    margin:10px;
+    margin-left:0px
+}
+
+.presentation-text{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+.presentation-text span{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Search and videos section ----------- */
+
+.search{
+    width:100%;
+    padding:20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    justify-content: center;
+}
+.search hr{
+   width:100%;
+}
+.search input{
+    padding: 10px 40px 10px 20px;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    background: #ffffff3a url('../../img/img-camperCafe/search_icon.png') no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    width:45%;
+    box-shadow: var(--shadow);
+    margin-bottom:20px;
+    color: var(--font-white);
+    font-size: 1.03rem;
+}
+/* Footer section ---------------------- */
+
+footer{
+    background-color: var(--footer);
+    justify-items: center;
+    color: var(--font-white);
+    bottom: 0;
+    width: 100%;
+    position:relative;
+    padding:10px;
+    box-sizing: border-box;
+}
+footer p, footer a{
+    margin-top:10px;
+    color:white;
+}
+.footer-infos{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin:30px 10%;
+    align-items: center;
+}
+.apres-footer{
+    display: flex;
+    flex-direction: column;
+    p{
+        margin-left:50px;
+        text-align: start;   
+    }
+}
+.medias{
+    float:right;
+    margin-left:auto;
+}
+.logo-footer{
+    display:flex;
+    align-items:flex-end;
+    gap:10px;
+}
+.logo-footer img{
+    width:40px;
+}
+.medias a{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    i{
+        font-size: 1.7rem;
+    }
+}
+footer hr{
+    width:86%;
+}
+@media(max-width:800px){
+    .footer-infos{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    .apres-footer, .medias{
+        text-align: center;
+        align-items: center;
+        float:none;
+        margin:0 auto;
+        justify-content: center;
+        p{
+            margin:10px;
+            text-align: center;
+        }
+    }
+    .medias{
+        align-items:center;
+        padding:10px;
+    }
+    .logo-footer{
+        flex-direction: column;
+        align-items: center;
+        img{
+            margin-bottom:5px;
+        }
+    }
+    section.presentation{
+        flex-wrap:wrap-reverse ;
+    }
+    .hero{
+        height:180px;
+    }
+    .search input{
+        width:100%;
+    }
+}
+
+@media(max-width:436px){
+    .presentation-text{
+        flex-wrap: wrap;
+    }
+}

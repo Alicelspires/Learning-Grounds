@@ -1,0 +1,127 @@
+.overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  display: none; 
+  z-index: 100;
+  overflow: hidden;
+}
+.pop-ups{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  z-index:10;
+  background:#5B5B5B;
+  border-radius:30px;
+  max-width:700px;
+  height: 340px;
+  padding:20px;
+  box-shadow: 0px 0px 20px -5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:20px;
+}
+.sections-price-btns, .main-content{
+  display:flex;
+  gap:20px;
+  width:100%;
+}
+.main-content{
+  height:80%;
+  align-items: center;
+}
+.img-prod{
+  height:100%;
+}
+.img-prod img{
+  background-color: var(--button-border);
+  width:clamp(140px, 20vw, 266px);
+  height:100%;
+  border-radius:20px;
+  object-fit: cover;
+}
+.desc-info{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  height:100%;
+  gap:10px;
+  font-weight: 500;
+  color:var(--font-white);
+}
+.desc-info h2{
+  font-size: clamp(var(--font-size-03), 2vw, var(--font-size-01));
+}
+.desc-info p{
+  font-size: clamp(var(--font-size-05), 2vw, var(--font-size-04));
+}
+
+/* Price and button pop-up card ----------- */
+.sections-price-btns{
+  justify-content: space-between;
+  align-items: end;
+}
+.pricing button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--button-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricePopUp{
+  font-size:var(--font-size-01);
+  font-weight: 600;
+  color:var(--font-white);
+}
+
+/* Box ingredientes ------------------ */
+.instructions{
+  border:2px solid black;
+  padding:10px;
+  border-radius: 5px;
+  background-color:#fff;
+  color:var(--font-black);
+  width: 200px;
+  margin:auto;
+}
+.instru{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  margin-bottom:5px;
+  border-bottom:1px dashed black;
+  padding-bottom: 5px;
+}
+.bold{
+  font-weight: bold;
+}
+
+/* Responsive */
+
+@media(max-width: 460px){
+  .main-content{
+    flex-direction: column;
+  }
+  .pop-ups{
+    top: 30%;
+    height:480px;
+    overflow:scroll;
+  }
+  .img-prod img{
+    background-color: var(--button-border);
+    width:230px;
+    height:140px;
+    border-radius:20px;
+    object-fit: cover;
+  }
+}

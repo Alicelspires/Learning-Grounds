@@ -1,0 +1,42 @@
+{
+  "random": [
+    "computer", "keyboard", "sunshine", "mountain", "adventure",
+    "bicycle", "notebook", "rainbow", "universe", "chocolate",
+    "guitar", "journey", "pillow", "whisper", "diamond",
+    "candle", "mirror", "window", "puzzle", "blanket",
+    "lantern", "harmony", "silence", "freedom", "wonder",
+    "capture", "horizon", "vintage", "serenity", "lighthouse",
+    "feather", "twilight", "cinnamon", "sapphire", "wilderness",
+    "happiness", "butterfly", "infinity", "moonlight", "treasure"
+  ],
+  "flowers": [
+    "rose", "tulip", "daisy", "sunflower", "lily",
+    "orchid", "daffodil", "peony", "lavender", "hibiscus",
+    "marigold", "carnation", "iris", "dahlia", "poppy",
+    "bluebell", "lilac", "magnolia", "geranium", "azalea",
+    "camellia", "hydrangea", "snapdragon", "zinnia", "cosmos",
+    "pansy", "violet", "begonia", "freesia", "anemone",
+    "ranunculus", "aster", "gardenia", "delphinium", "amaryllis",
+    "dianthus", "chrysanthemum", "forgetmenot", "primrose", "stock"
+  ],
+  "animals": [
+    "elephant", "giraffe", "kangaroo", "rhinoceros", "cheetah",
+    "penguin", "octopus", "butterfly", "dolphin", "chameleon",
+    "gorilla", "peacock", "koala", "panda", "leopard",
+    "crocodile", "flamingo", "hedgehog", "armadillo", "platypus",
+    "porcupine", "anteater", "mongoose", "wombat", "meerkat",
+    "tapir", "lemur", "bison", "baboon", "caracal",
+    "serval", "okapi", "quokka", "narwhal", "manatee",
+    "tarsier", "axolotl", "capybara", "fossa", "kinkajou"
+  ],
+  "fruit": [
+    "apple", "banana", "orange", "strawberry", "pineapple",
+    "blueberry", "raspberry", "watermelon", "kiwi", "mango",
+    "peach", "pear", "plum", "grape", "pomegranate",
+    "apricot", "nectarine", "cantaloupe", "blackberry", "cranberry",
+    "passionfruit", "dragonfruit", "guava", "persimmon", "lychee",
+    "starfruit", "boysenberry", "elderberry", "gooseberry", "kumquat",
+    "tangerine", "clementine", "plantain", "uglifruit", "quince",
+    "mulberry", "soursop", "breadfruit", "jackfruit", "durian"
+  ]
+}
